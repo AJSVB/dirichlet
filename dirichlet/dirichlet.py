@@ -392,7 +392,7 @@ def _init_a(D):
     return ((E[0] - E2[0]) / (E2[0] - E[0] ** 2)) * E
 
 
-def _ipsi(y, tol=1.48e-9, maxiter=10):
+def _ipsi(y, tol=1.48e-9, maxiter=100000):
     """Inverse of psi (digamma) using Newton's method. For the purposes
     of Dirichlet MLE, since the parameters a[i] must always
     satisfy a > 0, we define ipsi :: R -> (0,inf).
